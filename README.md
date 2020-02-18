@@ -19,9 +19,9 @@ All the samples run in test mode -- use the below test card numbers with any CVC
 
 Follow the steps below to run locally.
 
-**1. Clone and configure the sample**
+**1. Clone and configure**
 
-You can manually clone and configure the sample yourself:
+You can manually clone and configure:
 
 ```
 git clone https://github.com/stripe-samples/accept-a-card-payment
@@ -33,7 +33,7 @@ Copy the .env.example file into a file named .env in the folder of the server yo
 cp .env.example using-webhooks/server/node/.env
 ```
 
-You will need a Stripe account in order to run the demo. Once you set up your account, go to the Stripe [developer dashboard](https://stripe.com/docs/development#api-keys) to find your API keys.
+You will need a Stripe account. Once you set up your account, go to the Stripe [developer dashboard](https://stripe.com/docs/development#api-keys) to find your API keys.
 
 ```
 STRIPE_PUBLISHABLE_KEY=<replace-with-your-publishable-key>
