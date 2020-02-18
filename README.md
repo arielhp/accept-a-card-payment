@@ -1,27 +1,8 @@
 # Accepting a card payment
 
-Cards are one of the most popular ways to pay online. Stripe offers several ways to accept card payments, depending on your business needs.
-
-If you accept cards in regions like Europe and India, you will need to handle requests from banks to authenticate a purchase (commonly known as 3DS or OTP) and can choose between our `using-webhooks` and `without-webhooks` integrations.
-
-If you only accept cards from U.S. and Canadian customers, you can use our integration that declines any bank requests for authentication but is much easier to integrate.
-
-Read more about cards on Stripe in [our docs](https://stripe.com/docs/payments/cards/overview).
-
-<!-- prettier-ignore -->
-|     | Using webhooks | Without webhooks | Declining on card authentication |
-:--- | :--- | :--- | :---
-**Recommended for** | Businesses with a global customer base who want to add other payment methods  | Businesses with a global customer base who only want to accept cards and don't want to use webhooks  | Businesses who only have customers in the U.S. & Canada |
-**Bank authentication requests** | Automatically handles, no need for extra code  | Requires extra code to handle authentication  | Declines any payments that require authentication |
-**Payment flow** | Server -> Client | Client -> Server -> Client -> Server | Client -> Server |
-**Webhooks for post-payment fulfillment** | Recommended (scales better to future payment method) | Optional | Optional |
-
-
 **Demo**
 
 Web: See a [hosted version](https://hhqhp.sse.codesandbox.io/) of the sample or fork a copy on [codesandbox.io](https://codesandbox.io/s/stripe-sample-accept-a-card-payment-hhqhp)
-
-Mobile: [Run the sample locally](#how-to-run-locally)
 
 All the samples run in test mode -- use the below test card numbers with any CVC code + a future expiration date to test for certain behavior.
 
@@ -83,9 +64,7 @@ STRIPE_SECRET_KEY=<replace-with-your-secret-key>
 
 **2. Follow the server instructions on how to run:**
 
-Pick the server language you want and follow the instructions in the server folder README on how to run.
-
-For example, if you want to run the Node server in `using-webhooks`:
+Run the Node server in `using-webhooks`:
 
 ```
 cd using-webhooks/server/node # there's a README in this folder with instructions
@@ -93,7 +72,7 @@ npm install
 npm start
 ```
 
-**3. [Optional] Run a webhook locally:**
+**3. Run a webhook locally:**
 
 If you want to test the `using-webhooks` integration with a local webhook on your machine, you can use the Stripe CLI to easily spin one up.
 
@@ -108,30 +87,3 @@ The CLI will print a webhook secret key to the console. Set `STRIPE_WEBHOOK_SECR
 You should see events logged in the console where the CLI is running.
 
 When you are ready to create a live webhook endpoint, follow our guide in the docs on [configuring a webhook endpoint in the dashboard](https://stripe.com/docs/webhooks/setup#configure-webhook-settings).
-
-**4. [Mobile clients] Set up the client app:**
-
-Finally, choose a mobile client implementation and follow the instruction in the app's README (e.g. `using-webhooks/client/ios/README.md`) to run.
-
-When the app is running, use `4242424242424242` as a test card number with any CVC code + a future expiration date.
-
-Use the `4000000000003220` test card number to trigger a 3D Secure challenge flow.
-
-Read more about testing on Stripe at https://stripe.com/docs/testing.
-
-## FAQ
-
-Q: Why did you pick these frameworks?
-
-A: We chose the most minimal framework to convey the key Stripe calls and concepts you need to understand. These demos are meant as an educational tool that helps you roadmap how to integrate Stripe within your own system independent of the framework.
-
-Q: Can you show me how to build X?
-
-A: We are always looking for new sample ideas, please email dev-samples@stripe.com with your suggestion!
-
-## Author(s)
-
-[@adreyfus-stripe](https://twitter.com/adrind)
-[@bg-stripe](https://github.com/bg-stripe)
-[@yuki-stripe](https://github.com/yuki-stripe)
-[@thorsten-stripe](https://twitter.com/thorwebdev)
