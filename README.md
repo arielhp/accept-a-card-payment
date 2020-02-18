@@ -65,5 +65,3 @@ stripe listen --forward-to localhost:4242/webhook
 The CLI will print a webhook secret key to the console. Set `STRIPE_WEBHOOK_SECRET` to this value in your .env file.
 
 You should see events logged in the console where the CLI is running.
-
-When you are ready to create a live webhook endpoint, follow our guide in the docs on [configuring a webhook endpoint in the dashboard](https://stripe.com/docs/webhooks/setup#configure-webhook-settings).
