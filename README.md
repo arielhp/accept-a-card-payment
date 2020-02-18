@@ -43,7 +43,7 @@ STRIPE_SECRET_KEY=<replace-with-your-secret-key>
 Run the Node server:
 
 ```
-cd accepting-a-card-payment/server # there's a README in this folder with instructions
+cd accept-a-card-payment/server # there's a README in this folder with instructions
 npm install
 npm start
 ```
