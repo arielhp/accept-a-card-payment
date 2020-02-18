@@ -2,7 +2,7 @@
 
 **Demo**
 
-Web: See a [hosted version](https://hhqhp.sse.codesandbox.io/) of the sample or fork a copy on [codesandbox.io](https://codesandbox.io/s/stripe-sample-accept-a-card-payment-hhqhp)
+Web: See a [hosted version](https://hhqhp.sse.codesandbox.io/)
 
 All the samples run in test mode -- use the below test card numbers with any CVC code + a future expiration date to test for certain behavior.
 
@@ -11,8 +11,6 @@ All the samples run in test mode -- use the below test card numbers with any CVC
 :--- | :--- | :--- | :---
 **4242424242424242** | Succeeds  | Succeeds  | Succeeds |
 **4000000000003220** | Displays a pop-up modal to authenticate  | Displays a pop-up modal to authenticate  | Declines and asks customer for new card |
-
-Read more about testing on Stripe at https://stripe.com/docs/testing.
 
 <img src="./web-elements-card-payment.gif" alt="Accepting a card payment" align="center">
 
