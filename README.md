@@ -29,7 +29,7 @@ git clone https://github.com/arielhp/accept-a-card-payment
 
 You will need a Stripe account. Once you set up your account, go to the Stripe [developer dashboard](https://stripe.com/docs/development#api-keys) to find your API keys. 
 
-Copy the .env.example file into a file named .env in the folder of the server you want to use. In the .env file:
+Copy the .env.example file into a file named .env in the server folder. In the .env file:
 
 ```
 STRIPE_PUBLISHABLE_KEY=<replace-with-your-publishable-key>
