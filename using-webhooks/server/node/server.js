@@ -37,9 +37,7 @@ const calculateOrderAmount = items => {
       price = 300;
     }
     amount += price * item.quantity;
-    console.log ("interim amount " + amount);
   }
-  console.log ("returned amount " + amount);
   return amount;
   // Replace this constant with a calculation of the order's amount
   // Calculate the order total on the server to prevent
