@@ -24,7 +24,7 @@ Follow the steps below to run locally.
 You can manually clone and configure:
 
 ```
-git clone https://github.com/stripe-samples/accept-a-card-payment
+git clone https://github.com/arielhp/accept-a-card-payment
 ```
 
 Copy the .env.example file into a file named .env in the folder of the server you want to use. For example:
