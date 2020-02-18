@@ -40,10 +40,10 @@ STRIPE_SECRET_KEY=<replace-with-your-secret-key>
 
 **2. Follow the server instructions on how to run:**
 
-Run the Node server in `using-webhooks`:
+Run the Node server:
 
 ```
-cd using-webhooks/server/node # there's a README in this folder with instructions
+cd accepting-a-card-payment/server # there's a README in this folder with instructions
 npm install
 npm start
 ```
